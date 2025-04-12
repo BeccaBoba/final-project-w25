@@ -1,0 +1,42 @@
+@font-face {
+    font-family: "Poppins";
+    src: url("/Poppins-Regular.ttf");
+}
+
+*{
+    font-family: Poppins;
+}
+
+
+
+img {
+    display: flex;
+    gap: 10px
+}
+
+h1 {
+    font-size:  2.027rem;  
+}
+    
+h2 {
+    font-size:  1.802rem;     
+}
+
+h3 {
+    font-size:  1.266rem;     
+}
+   
+.container {
+    max-width: 1200px;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.flex-image {
+    width: 100px;
+    margin: 10px;
+    flex: 1;
+    text-align: center;
+}
