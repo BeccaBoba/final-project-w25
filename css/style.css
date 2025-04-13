@@ -5,6 +5,7 @@
 
 *{
     font-family: Poppins;
+    font-size: 20px;
 }
 
 
@@ -20,10 +21,12 @@ h1 {
     
 h2 {
     font-size:  1.802rem;     
+    text-align: center;
 }
 
 h3 {
     font-size:  1.266rem;     
+    text-align: center;
 }
    
 .container {
@@ -42,13 +45,37 @@ h3 {
 .flex-image {
     width: 500px;
     margin: 10px;
-}
-
-.grid-container {
-  display: grid;
+    border-radius: 15px;
     
 }
 
-.grid-image {
+    .grid-container {
+    display: grid;
+    grid-template-areas:
+    "grid-image grid-image"
+    "grid-image grid-image";
+    gap: 10px;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    }
 
+.grid-image {
+ grid-area: "grid-image";   
+ width: 300px;
+ border-radius: 15px;
 }
+
+.Top-Section {
+    display: flex;
+    gap: 10px;
+}
+
+.wrapper {
+    margin: auto;
+    width: 50%;
+}
+
+
+
